@@ -48,7 +48,7 @@ public class logInPage extends JFrame{
         
         btnLog.addActionListener( e -> {
                  
-boolean found= false;
+                boolean found= false;
 
                     String id = tfUsername.getText();
                         String password = tfPassword.getText();
@@ -59,15 +59,15 @@ boolean found= false;
                         break;
                         
                     }
-                    if(found){
+                   
+                }
+                 if(found){
                          new dashboard();
                          this.dispose();;
                     }
                     else{
-                        JOptionPane.showMessageDialog(this, "Incorrect UserId or Paasword");
+                        JOptionPane.showMessageDialog(this, "Incorrect UserId or Password");
                     }
-                }
-                
         
         
         

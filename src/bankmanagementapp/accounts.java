@@ -61,12 +61,12 @@ public class accounts extends JFrame{
         submit.addActionListener(e -> {
         
             
-            //for log in
+            //for log in to sya to proceed sa dashboard
             String inputedUserId = tfuserId.getText();
              String inputedPass = tfpass.getText();
             
 
-            //THIS IS FOR THE EMAIL INFO(ESP FOR FORGOTTING ACC
+            //THIS IS FOR THE EMAIL INFO( FOR retrieving accounts )
         String emailInputed = tfEmail.getText();
         
         if (emailInputed.isEmpty() || inputedUserId.isEmpty() || inputedPass.isEmpty()){
@@ -74,10 +74,11 @@ public class accounts extends JFrame{
             return;
         }
          
-            accCreationPage newAcc = new accCreationPage (emailInputed,inputedUserId, inputedPass);
+            accCreationPage newAcc = new accCreationPage (inputedUserId,emailInputed, inputedPass);
             accDatabase.acc.add(newAcc);
       
         JOptionPane.showMessageDialog(this, "Account Created!");
+    
         
         
         });

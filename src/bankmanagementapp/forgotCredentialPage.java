@@ -10,7 +10,7 @@ public class forgotCredentialPage extends JFrame {
     
     
             JLabel forgotMes;
-            JButton btnOpt1,btnOpt2,btnOpt3;
+            JButton btnOpt1,btnOpt2,btnOpt3,homepage;
     
     public forgotCredentialPage(){
         
@@ -29,20 +29,37 @@ public class forgotCredentialPage extends JFrame {
         btnOpt1.setBounds(100, 150, 300, 15);
         add(btnOpt1);
         btnOpt1.addActionListener(e ->{
-        new forgotPage1();
+        new forgotPage2();
         this.dispose();
         });
         
           btnOpt2 = new JButton ("I forgot my password");
         btnOpt2.setBounds(100, 180, 300, 15);
        add(btnOpt2);
+       btnOpt2.addActionListener(e ->{
+        new forgotPage1();
+        this.dispose();
+        });
        
         btnOpt3 = new JButton ("I forgot my USER-ID & password");
         btnOpt3.setBounds(100, 210, 300, 15);
-        add(btnOpt3);        
+        add(btnOpt3);  
+        btnOpt3.addActionListener(e ->{
+        new forgotPage2();
+        this.dispose();
+        });
         
         
-        
+        homepage = new JButton ("Back to Homepage");
+            homepage.setBounds(150, 420, 200, 30);
+            add(homepage); 
+            homepage.addActionListener( e-> {
+            
+            new frontPage().setVisible(true);
+            this.dispose();
+            
+            
+            });
         
         
         
