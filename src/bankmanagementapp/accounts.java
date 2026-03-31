@@ -12,9 +12,11 @@ public class accounts extends JFrame{
     JTextField tfEmail, tfuserId,tfpass;
      JButton submit, logInPage; 
      
-      ArrayList <String> acc = new ArrayList<>();
+     
     public accounts(){
-        
+         
+         
+         
         setVisible(true);
         setSize(500, 900);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -67,17 +69,17 @@ public class accounts extends JFrame{
             //THIS IS FOR THE EMAIL INFO(ESP FOR FORGOTTING ACC
         String emailInputed = tfEmail.getText();
         
-        if (emailInputed.isEmpty()){
+        if (emailInputed.isEmpty() || inputedUserId.isEmpty() || inputedPass.isEmpty()){
             JOptionPane.showMessageDialog(this,"REQUIRED FIELD : Email, userID, and Password");
             return;
-        }else{
-            
-        acc.add(emailInputed );
-        acc.add(inputedUserId);
-        acc.add(inputedPass);
+        }
+         
+            accCreationPage newAcc = new accCreationPage (emailInputed,inputedUserId, inputedPass);
+            accDatabase.acc.add(newAcc);
+      
         JOptionPane.showMessageDialog(this, "Account Created!");
         
-        }
+        
         });
         
         logInPage = new JButton("BACK TO LOGIN PAGE");

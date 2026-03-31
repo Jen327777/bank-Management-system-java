@@ -11,8 +11,7 @@ public class logInPage extends JFrame{
     JTextField tfUsername, tfPassword;
     JButton btnLog, btnForgot, btnBack;
     
-      ArrayList <String> acc = new ArrayList<>();
-    public logInPage(){
+        public logInPage(){
         
         setVisible(true);
         setSize(500, 500);
@@ -49,21 +48,26 @@ public class logInPage extends JFrame{
         
         btnLog.addActionListener( e -> {
                  
-//                 String logUserId = tfUsername.getText();
-//                 String logPass = tfPassword.getText();
-//                 if ( logUserId.equals(acc(inputedUserId)) && logPass.equals(acc(String inputed Pass))){
-//                     
-//                     
-//                   new dashboard();
-//                     this.dispose();
-//                     
-//                     
-//                 }else{
-//                     
-//                    JOptionPane.showMessageDialog(this,"Incorrect Username or Password");
-//                     
-//                 }
-         
+boolean found= false;
+
+                    String id = tfUsername.getText();
+                        String password = tfPassword.getText();
+                for (accCreationPage a : accDatabase.acc){
+                    if (a.getUserId().equals(id) && a.getPassword().equals(password)){
+                        found = true;
+                       
+                        break;
+                        
+                    }
+                    if(found){
+                         new dashboard();
+                         this.dispose();;
+                    }
+                    else{
+                        JOptionPane.showMessageDialog(this, "Incorrect UserId or Paasword");
+                    }
+                }
+                
         
         
         

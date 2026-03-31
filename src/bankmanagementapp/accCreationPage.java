@@ -1,28 +1,37 @@
 
 package bankmanagementapp;
 
-import javax.swing.*;
-import java.awt.event.*;
+
 import java.util.*;
 
-public class accCreationPage extends JFrame{
+public class accCreationPage {
+   
+//    String firstName,lastName,midName,mobNum,add,idType,idNum; 
+    //separated muna since this is for database
     
-    String firstName,lastName,midName,userName,pass,mobNum,add,idType,idNum;
+    private String email,userid,pass;
     
-    String email;
-    
-    
-    
-    
-    public accCreationPage(String firstName,String email){
+   
+    public accCreationPage(String userid,String email, String pass){
         
         
-    this.firstName= firstName;
-    this.lastName= lastName;
+    this.userid= userid;
+    this.pass= pass;
     this.email= email;
         
         
     }
+    
+    //setting up a getter
+    
+    public String getUserId(){
+        return userid;
+    }
 
+    public String getEmail(){
+        return email;
+    }public String getPassword(){
+        return pass;
+    }
     
 }
