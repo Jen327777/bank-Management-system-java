@@ -10,14 +10,8 @@ import java.util.ArrayList;
 
 public class forgotPage2 extends JFrame {
     
-      ArrayList <accCreationPage> acc;
+     ArrayList <accCreationPage> acc;
 
-    public forgotPage2(ArrayList<accCreationPage> acc){
-           this.acc = accDatabase.acc;
-    }
-    
-    
-    
     
     JLabel Title, desc,email;
     JTextField tfEmail;
@@ -25,7 +19,8 @@ public class forgotPage2 extends JFrame {
     
     public forgotPage2(){
         
-        
+      this.acc = accDatabase.acc;
+      
         setVisible(true);
         setSize(500, 500);
         setLayout(null);
@@ -72,7 +67,7 @@ public class forgotPage2 extends JFrame {
                     
             
             if(found){JOptionPane.showMessageDialog(this, "Email Found!");
-                    new logInPage();
+                    new dashboard();
                     this.dispose();
             } else{
                     JOptionPane.showMessageDialog(this, "Email not registered!");

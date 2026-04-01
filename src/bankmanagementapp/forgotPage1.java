@@ -10,14 +10,16 @@ public class forgotPage1 extends JFrame {
     
     ArrayList <accCreationPage> acc;
     
-    public forgotPage1(ArrayList<accCreationPage> acc){
-        this.acc = accDatabase.acc;
-    }
+   
     
     JLabel Title, desc,Userid;
     JTextField tfUserid;
     JButton submit,homepage;
+    
     public forgotPage1(){
+        
+        this.acc = accDatabase.acc;
+        
         
         setVisible(true);
         setSize(500, 500);
@@ -59,7 +61,7 @@ public class forgotPage1 extends JFrame {
                     
             
             if(found){JOptionPane.showMessageDialog(this, "USER- ID Found!");
-                    new logInPage();
+                    new dashboard();
                     this.dispose();
             } else{
                     JOptionPane.showMessageDialog(this, "USER_ID not registered!");

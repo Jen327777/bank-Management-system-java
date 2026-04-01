@@ -25,7 +25,7 @@ public class forgotCredentialPage extends JFrame {
         forgotMes.setBounds(30, 100, 400, 15);
         add(forgotMes);
         
-        btnOpt1 = new JButton ("I forgot my USER-ID");
+        btnOpt1 = new JButton ("I forgot my USER-ID");//for user id itowww
         btnOpt1.setBounds(100, 150, 300, 15);
         add(btnOpt1);
         btnOpt1.addActionListener(e ->{
@@ -33,7 +33,7 @@ public class forgotCredentialPage extends JFrame {
         this.dispose();
         });
         
-          btnOpt2 = new JButton ("I forgot my password");
+          btnOpt2 = new JButton ("I forgot my password"); //for forgot pass nmn here
         btnOpt2.setBounds(100, 180, 300, 15);
        add(btnOpt2);
        btnOpt2.addActionListener(e ->{
