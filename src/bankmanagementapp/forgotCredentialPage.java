@@ -22,7 +22,7 @@ public class forgotCredentialPage extends JFrame {
         
         
         forgotMes = new JLabel ("Recover your account by using your account details...");
-        forgotMes.setBounds(30, 100, 400, 15);
+        forgotMes.setBounds(30, 100, 500, 15);
         add(forgotMes);
         
         btnOpt1 = new JButton ("I forgot my USER-ID");//for user id itowww

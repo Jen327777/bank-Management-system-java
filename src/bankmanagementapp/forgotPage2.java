@@ -56,10 +56,10 @@ public class forgotPage2 extends JFrame {
             String inputEmail = tfEmail.getText();
             boolean found = false;
             
-            for(accCreationPage a: acc){
+            for(accCreationPage user: acc){
                  
             
-            if(a.getEmail().equals(inputEmail)){
+            if(user.getEmail().equals(inputEmail)){
                 
             found= true;
             break;

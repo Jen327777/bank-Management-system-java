@@ -62,11 +62,11 @@ public class accounts extends JFrame{
         
             
             //for log in to sya to proceed sa dashboard
+            
+            
+            //THIS IS FOR THE EMAIL INFO( FOR retrieving accounts )
             String inputedUserId = tfuserId.getText();
              String inputedPass = tfpass.getText();
-            
-
-            //THIS IS FOR THE EMAIL INFO( FOR retrieving accounts )
         String emailInputed = tfEmail.getText();
         
         if (emailInputed.isEmpty() || inputedUserId.isEmpty() || inputedPass.isEmpty()){

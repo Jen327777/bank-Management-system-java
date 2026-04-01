@@ -6,8 +6,8 @@ import java.util.*;
 
 public class accCreationPage {
    
-//    String firstName,lastName,midName,mobNum,add,idType,idNum; 
-    //separated muna since this is for database
+
+    //separated lang for storing acc
     
     private String email,userid,pass;
     
@@ -22,7 +22,7 @@ public class accCreationPage {
         
     }
     
-    //setting up a getter
+    //setting up a getter for extra na protection of the attributes
     
     public String getUserId(){
         return userid;

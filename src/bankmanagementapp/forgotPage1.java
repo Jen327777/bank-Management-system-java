@@ -50,10 +50,10 @@ public class forgotPage1 extends JFrame {
             String inputUserId = tfUserid.getText();
             boolean found = false;
             
-            for(accCreationPage a: acc){
+            for(accCreationPage user: acc){
                  
             
-            if(a.getUserId().equals(inputUserId)){
+            if(user.getUserId().equals(inputUserId)){
                 
             found= true;
             break;

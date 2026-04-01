@@ -51,9 +51,9 @@ public class logInPage extends JFrame{
                 boolean found= false;
 
                     String id = tfUsername.getText();
-                        String password = tfPassword.getText();
-                for (accCreationPage a : accDatabase.acc){
-                    if (a.getUserId().equals(id) && a.getPassword().equals(password)){
+                    String password = tfPassword.getText();
+                for (accCreationPage user : accDatabase.acc){
+                    if (user.getUserId().equals(id) && user.getPassword().equals(password)){
                         found = true;
                        
                         break;
