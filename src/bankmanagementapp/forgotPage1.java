@@ -4,7 +4,12 @@ package bankmanagementapp;
 import javax.swing.*;
 import java.awt.event.*;
 import java.util.*;
+
+
+
 //user id needed
+
+
 
 public class forgotPage1 extends JFrame {
     
@@ -27,24 +32,29 @@ public class forgotPage1 extends JFrame {
         setLayout(null);
         
         Title= new JLabel("FORGOT MY PASSWORD");
+        Title.setFont(new java.awt.Font("Segoe UI", java.awt.Font.BOLD, 20));
         add(Title);
-        Title.setBounds(50, 60, 150, 30);
+        Title.setBounds(50, 40, 300, 40);
         
         desc= new JLabel("Enter your registered USER_ID  below to recover your account");
+        desc.setFont(new java.awt.Font("Segoe UI", java.awt.Font.BOLD, 12));
         add(desc);
-        desc.setBounds(50, 150, 500, 30);
+        desc.setBounds(50, 100, 400, 30);
         
          Userid= new JLabel("User-ID: ");
+         Userid.setFont(new java.awt.Font("Segoe UI", java.awt.Font.PLAIN, 14));
         add(Userid);
-        Userid.setBounds(90, 200, 150, 30);
+        Userid.setBounds(80, 170, 100, 30);
         
         tfUserid= new JTextField();
+          tfUserid.setFont(new java.awt.Font("Segoe UI", java.awt.Font.PLAIN, 14));
         add(tfUserid);
-        tfUserid.setBounds(140, 200, 250, 30);
+        tfUserid.setBounds(140, 170, 220, 35);
         
          submit= new JButton("Submit");
+           submit.setFont(new java.awt.Font("Segoe UI", java.awt.Font.PLAIN, 14));
         add(submit);
-        submit.setBounds(180, 350,150, 30);
+        submit.setBounds(175, 260, 150, 40);
         submit.addActionListener(e ->{
         
             String inputUserId = tfUserid.getText();
@@ -74,7 +84,8 @@ public class forgotPage1 extends JFrame {
         });
         
         homepage = new JButton ("Back to Homepage");
-            homepage.setBounds(150, 420, 200, 30);
+            homepage.setBounds(150, 350, 200, 40);
+            homepage.setFont(new java.awt.Font("Segoe UI", java.awt.Font.PLAIN, 14));
             add(homepage); 
             homepage.addActionListener( e-> {
             

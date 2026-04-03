@@ -34,23 +34,28 @@ public class forgotPage2 extends JFrame {
         
         Title= new JLabel("FORGOT MY ACCOUNT LOGIN");
         add(Title);
-        Title.setBounds(50, 60, 150, 30);
+        Title.setFont(new java.awt.Font("Segoe UI",java.awt.Font.BOLD, 20));
+        Title.setBounds(50, 40, 320, 40);
         
         desc= new JLabel("Enter your registered email address below to recover your account");
+        desc.setFont(new java.awt.Font("Segoe UI", java.awt.Font.BOLD, 12));
         add(desc);
-        desc.setBounds(50, 150, 500, 30);
+        desc.setBounds(50, 100, 400, 30);
         
          email= new JLabel("Email: ");
+         email.setFont(new java.awt.Font("Segoe UI", java.awt.Font.PLAIN, 14));
         add(email);
-        email.setBounds(90, 200, 150, 30);
+        email.setBounds(80, 170, 100, 30);
         
         tfEmail= new JTextField();
         add(tfEmail);
-        tfEmail.setBounds(140, 200, 250, 30);
+        tfEmail.setFont(new java.awt.Font("Segoe UI", java.awt.Font.PLAIN, 14));
+        tfEmail.setBounds(140, 170, 220, 35);
         
          submit= new JButton("Submit");
         add(submit);
-        submit.setBounds(180, 350,150, 30);
+        submit.setBounds(175, 260, 150, 40);
+        submit.setFont(new java.awt.Font("Segoe UI", java.awt.Font.PLAIN, 14));
         submit.addActionListener(e ->{
         
             String inputEmail = tfEmail.getText();
@@ -75,8 +80,9 @@ public class forgotPage2 extends JFrame {
         });
 
             homepage = new JButton ("Back to Homepage");
-            homepage.setBounds(150, 420, 200, 30);
+            homepage.setBounds(150, 350, 200, 40);
             add(homepage); 
+            homepage.setFont(new java.awt.Font("Segoe UI", java.awt.Font.PLAIN, 14));
             homepage.addActionListener( e-> {
             
             new frontPage().setVisible(true);
